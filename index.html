@@ -15153,7 +15153,7 @@
                                 <div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div>
                                 <div id="bgMedia_pageBackground_fe9bq" class="VgO9Yg" >
                                     <wow-image id="img_pageBackground_fe9bq" class="HlRz5e Kv1aVt dLPlxY mNGsUM bgImage" style="transform: translate3d(0px, 0px, 0px);">
-                                        <img src="./img/background.webp" alt="" style="object-fit: cover; object-position: 50% 0%;" fetchpriority="high">
+                                        <img id="backgroundImg" src="./img/background.webp" alt="" style="object-fit: cover; object-position: 50% 0%;" fetchpriority="high">
                                     </wow-image>
                                 </div>
                             </div>
@@ -15315,7 +15315,7 @@
                                                                         </h6>
                                                                     </div>
                                                                     <div class="comp-is78a28p R6ex7N" id="comp-is78a28p" aria-disabled="false" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done" style="visibility: inherit;">
-                                                                        <a data-testid="linkElement" data-anchor="dataItem-iroo2f7q" data-anchor-comp-id="comp-iroo2f7a" href="" target="_self" class="kuTaGy wixui-button zKbzSQ" aria-disabled="false">
+                                                                        <a id="lets_go" data-testid="linkElement" data-anchor="dataItem-iroo2f7q" data-anchor-comp-id="comp-iroo2f7a" class="kuTaGy wixui-button zKbzSQ" aria-disabled="false">
                                                                             <span class="M3I7Z2 wixui-button__label">Đi thôi nào!</span>
                                                                         </a>
                                                                     </div>
@@ -17728,10 +17728,16 @@
             var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             console.log(rect.top, window.innerHeight);
             if (rect.top < window.innerHeight) {
-                eventEl.style.background = 'red';
+                // eventEl.style.background = 'red';
+                document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
             } else {
-                eventEl.style.backgroundColor = '';
+                document.getElementById("backgroundImg").src = "./img/background.webp";
             }
+            });
+
+            document.getElementById("lets_go").addEventListener("click", function() {
+                var element = document.getElementById("mediair4tf58v7");
+                element.scrollIntoView({ behavior: "smooth" });
             });
 
             // <![CDATA[  <-- For SVG support
