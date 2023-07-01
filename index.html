@@ -17734,15 +17734,9 @@
                 document.getElementById("backgroundImg").src = "./img/background.webp";
             }
             });
-
-            window.onload = function() {
-                if(!localStorage.getItem('firstLoad')) {
-                localStorage['firstLoad'] = true;
-                window.location.reload();
-                } else
-                localStorage.removeItem('firstLoad');
-            }
-
+            var container = document.getElementById("SITE_CONTAINER");
+            container.style.width = window.innerWidth + "px";
+            console.log(container);
             document.getElementById("lets_go").addEventListener("click", function() {
                 var element = document.getElementById("mediair4tf58v7");
                 element.scrollIntoView({ behavior: "smooth" });
