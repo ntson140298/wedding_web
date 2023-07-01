@@ -17735,6 +17735,14 @@
             }
             });
 
+            window.onload = function() {
+                if(!localStorage.getItem('firstLoad')) {
+                localStorage['firstLoad'] = true;
+                window.location.reload();
+                } else
+                localStorage.removeItem('firstLoad');
+            }
+
             document.getElementById("lets_go").addEventListener("click", function() {
                 var element = document.getElementById("mediair4tf58v7");
                 element.scrollIntoView({ behavior: "smooth" });
