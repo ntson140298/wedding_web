@@ -6855,7 +6855,7 @@
                     left: 0;
                     margin-left: 0;
                     width: 100%;
-                    min-width: 980px
+                    /* min-width: 980px */
                 }
 
                 #comp-ljdyako5 {
@@ -11764,12 +11764,23 @@
                     body {
                         width: 400px;
                     }
+                    /* .aizuI7 svg { 
+                        width: 50%;
+                    } */
+
                 }
 
-                .KubSJS {
-                    font-size: 16px !important
+                /* @media screen and (max-width: 1200px) {
+                body {
+                    font-size: 14px;
                 }
+                
+                html {
+                    overflow-x: hidden;
+                }
+                } */
 
+               
                 .QwxLu3 {
                     color: rgb(var(--descriptionColor, var(--wix-color-5)));
                     font: var(--descriptionFont, var(--wix-font-Body-M));
@@ -17726,24 +17737,29 @@
         <!-- warmup data end -->
         <!-- Code injected by live-server -->
         <script>
-            window.addEventListener('scroll', function() {
-            var element = document.getElementById('mediair4tf58v7');
-            var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
-            
-            var rect = element.getBoundingClientRect();
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            console.log(rect.top, window.innerHeight);
-            if (rect.top < window.innerHeight) {
-                // eventEl.style.background = 'red';
-                document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
-            } else {
-                document.getElementById("backgroundImg").src = "./img/background.webp";
-            }
-            });
 
-            // var container = document.getElementById("SITE_CONTAINER");
-            // container.style.width = window.innerWidth + "px";
-            // console.log(container);
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth <= 400) {
+            // Thực hiện các hành động hoặc thay đổi cần thiết cho màn hình có kích thước nhỏ hơn hoặc bằng 400px ở đây
+            } else {
+            // Thực hiện các hành động hoặc thay đổi cần thiết cho các màn hình lớn hơn 400px ở đây
+            }
+
+            // window.addEventListener('scroll', function() {
+            // var element = document.getElementById('mediair4tf58v7');
+            // var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
+            
+            // var rect = element.getBoundingClientRect();
+            // var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            // console.log(rect.top, window.innerHeight);
+            // if (rect.top < window.innerHeight) {
+            //     // eventEl.style.background = 'red';
+            //     document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
+            // } else {
+            //     document.getElementById("backgroundImg").src = "./img/background.webp";
+            // }
+            // });
 
             document.getElementById("lets_go").addEventListener("click", function() {
                 var element = document.getElementById("mediair4tf58v7");
