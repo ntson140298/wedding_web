@@ -6703,12 +6703,7 @@
                     height: 645px
                 }
 
-                @media (max-width: 600px) {
-                #comp-isa7l4b0 {
-                    /* width: 410px;
-                    height: 545px */
-                }
-                }
+               
 
                 #comp-is78a28o {
                     width: 589px;
@@ -6740,6 +6735,58 @@
                     height: 26px
                 }
 
+                @media (max-width: 500px) {
+                    /* #comp-is78a28o1 {
+                        width: 135px;
+                        height: 28px
+                    } */
+                    #comp-isa7l4b0 {
+                        width: 400px;
+                        height: 500px;
+                        margin-left: -100px;
+                        margin-top: 80px;
+                    }
+                    #comp-is78a28o {
+                        width: 200px;
+                        margin-left: -62px;
+                        font-size: 12px;
+                    }
+                    #comp-is78a28o h1 {
+                        font-size: 19px !important;
+                    }
+                    #comp-is78a28o1 {
+                        width: 189px;
+                        margin-left: -132px;
+                        font-size: 16px;
+                    }
+                    #comp-is78a28o1 h6{
+                        font-size: 12px !important;
+                    }
+                    #comp-is78a28o2 {
+                        width: 341px;
+                        height: 78px;
+                        margin-left: -276px;
+                    }
+                    #comp-is78a28o3 {
+                        width: 1px;
+                        height: 41px;
+                        margin-left: -276px;
+
+                    }
+                    #comp-is78a28o4 {
+                        width: 543px;
+                        height: 48px;
+                        margin-left: -264px;
+                    }
+                    #comp-is78a28o5 {
+                        margin-left: -264px;
+                    }
+                    #comp-is78a28p {
+                        margin-left: -264px;                        
+                        margin-top: -24px;                        
+                    }
+
+                }
                 #comp-is78a28p {
                     width: 160px;
                     height: 40px
@@ -17746,20 +17793,20 @@
             // Thực hiện các hành động hoặc thay đổi cần thiết cho các màn hình lớn hơn 400px ở đây
             }
 
-            // window.addEventListener('scroll', function() {
-            // var element = document.getElementById('mediair4tf58v7');
-            // var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
+            window.addEventListener('scroll', function() {
+            var element = document.getElementById('mediair4tf58v7');
+            var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
             
-            // var rect = element.getBoundingClientRect();
-            // var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            // console.log(rect.top, window.innerHeight);
-            // if (rect.top < window.innerHeight) {
-            //     // eventEl.style.background = 'red';
-            //     document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
-            // } else {
-            //     document.getElementById("backgroundImg").src = "./img/background.webp";
-            // }
-            // });
+            var rect = element.getBoundingClientRect();
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            console.log(rect.top, window.innerHeight);
+            if (rect.top < window.innerHeight) {
+                // eventEl.style.background = 'red';
+                document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
+            } else {
+                document.getElementById("backgroundImg").src = "./img/background.webp";
+            }
+            });
 
             document.getElementById("lets_go").addEventListener("click", function() {
                 var element = document.getElementById("mediair4tf58v7");
