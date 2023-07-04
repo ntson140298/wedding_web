@@ -17798,14 +17798,22 @@
             var windowWidth = window.innerWidth;
             console.log(windowWidth);
             // Kiểm tra điều kiện
-            if (windowWidth <= 600) {
-                // Tính toán giá trị zoom mới
-                var newZoom = window.innerWidth / windowWidth * 50;
 
-                // Áp dụng zoom mới
-                document.body.style.zoom = newZoom + '%';
-            }
-        };
+                if (windowWidth <= 400) {
+                    // Tính toán giá trị zoom mới
+                    var newZoom = window.innerWidth / windowWidth * 40;
+                    console.log("ABC",newZoom);
+                    // Áp dụng zoom mới
+                    document.body.style.zoom = newZoom + '%';
+                }
+                if (windowWidth <= 600 && windowWidth >= 400) {
+                    // Tính toán giá trị zoom mới
+                    var newZoom = window.innerWidth / windowWidth * 50;
+                    console.log("ABC",newZoom);
+                    // Áp dụng zoom mới
+                    document.body.style.zoom = newZoom + '%';
+                }
+            };
             var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
             if (screenWidth <= 400) {
