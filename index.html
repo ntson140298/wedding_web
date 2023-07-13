@@ -15,6 +15,29 @@
         <script nomodule="" src="https://polyfill.io/v3/polyfill.min.js?features=fetch"></script>
         <!-- Performance API Polyfills -->
         <script>
+            // window.onload = function() {
+            // // Lấy chiều rộng cửa sổ trình duyệt
+            // var windowWidth = window.innerWidth;
+            // console.log(windowWidth);
+            // // Kiểm tra điều kiện
+
+            //     if (windowWidth <= 400) {
+            //         // Tính toán giá trị zoom mới
+            //         var newZoom = window.innerWidth / windowWidth * 42;
+            //         console.log("ABC",newZoom);
+            //         // Áp dụng zoom mới
+            //         // document.body.style.zoom = newZoom + '%';
+            //         document.body.style.width = newZoom + '%';
+            //         console.log(document.body.style.width);
+            //     }
+            //     if (windowWidth <= 600 && windowWidth >= 400) {
+            //         // Tính toán giá trị zoom mới
+            //         var newZoom = window.innerWidth / windowWidth * 50;
+            //         console.log("ABC",newZoom);
+            //         // Áp dụng zoom mới
+            //         document.body.style.zoom = newZoom + '%';
+            //     }
+            // };
             (function() {
                 var noop = function noop() {};
                 if ("performance"in window === false) {
@@ -11810,7 +11833,7 @@
 
                 @media only screen and (max-width: 468px) {
                     body {
-                        width: 400px;
+                        width: 400px !important;
                     }
                     /* .aizuI7 svg { 
                         width: 50%;
@@ -17711,42 +17734,19 @@
         <!-- warmup data end -->
         <!-- Code injected by live-server -->
         <script>
-        // window.onload = function() {
-        //     // Tính toán giá trị zoom mới
-        //     var newZoom = window.innerWidth / screen.width * 250;
-
-        //     // Áp dụng zoom mới
-        //     document.body.style.zoom = newZoom + '%';
-        // };
-
-        window.onload = function() {
-            // Lấy chiều rộng cửa sổ trình duyệt
             var windowWidth = window.innerWidth;
-            console.log(windowWidth);
-            // Kiểm tra điều kiện
-
-                if (windowWidth <= 400) {
-                    // Tính toán giá trị zoom mới
-                    var newZoom = window.innerWidth / windowWidth * 42;
-                    console.log("ABC",newZoom);
-                    // Áp dụng zoom mới
-                    document.body.style.zoom = newZoom + '%';
-                }
-                if (windowWidth <= 600 && windowWidth >= 400) {
-                    // Tính toán giá trị zoom mới
-                    var newZoom = window.innerWidth / windowWidth * 50;
-                    console.log("ABC",newZoom);
-                    // Áp dụng zoom mới
-                    document.body.style.zoom = newZoom + '%';
-                }
-            };
-            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-            if (screenWidth <= 400) {
-            // Thực hiện các hành động hoặc thay đổi cần thiết cho màn hình có kích thước nhỏ hơn hoặc bằng 400px ở đây
-            } else {
-            // Thực hiện các hành động hoặc thay đổi cần thiết cho các màn hình lớn hơn 400px ở đây
+            if (windowWidth <= 360) {
+                document.body.style.zoom =  window.innerWidth / windowWidth * 38 + '%';
             }
+            if (windowWidth <= 400) {
+                document.body.style.zoom =  window.innerWidth / windowWidth * 40 + '%';
+            }
+            if (windowWidth <= 600 && windowWidth >= 400) {
+                // Tính toán giá trị zoom mới
+                var newZoom = window.innerWidth / windowWidth * 50;
+                document.body.style.zoom = newZoom + '%';
+            }
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
             window.addEventListener('scroll', function() {
             var element = document.getElementById('mediair4tf58v7');
