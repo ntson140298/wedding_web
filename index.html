@@ -74,6 +74,9 @@
         }
         )();
     </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
     <!-- Sentry -->
     <script id="sentry">
         (function (c, t, u, n, p, l, y, z, v) {
@@ -1972,11 +1975,14 @@
             margin: 0;
             outline: 0;
             padding: 0;
-            vertical-align: baseline
+            vertical-align: baseline;
+            
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            /* font-family: Arial, Helvetica, sans-serif;
+             */
+            font-family: 'Roboto', sans-serif;
             font-size: 10px
         }
 
@@ -6012,7 +6018,8 @@
         :root {
             --cookie-banner-primary-color: #fff;
             --cookie-banner-secondary-color: #000;
-            --cookie-banner-font-family: HelveticaNeue, Helvetica Neue, helvetica, Sans-Serif;
+            /* --cookie-banner-font-family: HelveticaNeue, Helvetica Neue, helvetica, Sans-Serif; */
+            --cookie-banner-font-family: 'Roboto', sans-serif;
             --cookie-banner-font-size: 14px
         }
 
@@ -7025,7 +7032,7 @@
                 min-width: 580px
             }
 
-            @font-face {
+            /* @font-face {
                 font-family: 'EB Garamond';
                 font-style: italic;
                 font-weight: 400;
@@ -7317,7 +7324,7 @@
                 src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix");
                 src: url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/cf053eae-ba1f-44f3-940c-a34b68ccbbdf.eot?#iefix") format("eot"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/8bf38806-3423-4080-b38f-d08542f7e4ac.woff2") format("woff2"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/e2b9cbeb-fa8e-41cd-8a6a-46044b29ba52.woff") format("woff"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/c2a69697-4f06-4764-abd4-625031a84e31.ttf") format("truetype"), url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/dc423cc1-bf86-415c-bc7d-ad7dde416a34.svg#dc423cc1-bf86-415c-bc7d-ad7dde416a34") format("svg");
                 font-display: block;
-            }
+            } */
 
             #comp-isa6l3fh {
                 --menuTotalBordersX: 0px;
@@ -8673,7 +8680,8 @@
                 --stroke-opacity: 1;
                 --fill: #652a2a;
                 --svg-calculated-padding: 1px 1px 1px 1px;
-                --svg-calculated-width: calc(100% - 2px);
+                /* --svg-calculated-width: calc(100% - 2px); */
+                --svg-calculated-width: 15px;
                 --svg-calculated-height: calc(100% - 2px)
             }
 
@@ -8682,7 +8690,11 @@
                 --fill-opacity: 1;
                 --stroke: #652a2a;
                 --stroke-opacity: 1;
-                --fill: #652a2a
+                --fill: #652a2a;
+                --svg-calculated-padding: 1px 1px 1px 1px;
+                /* --svg-calculated-width: calc(100% - 2px); */
+                --svg-calculated-width: 15px;
+                --svg-calculated-height: calc(100% - 2px)
             }
 
             #comp-ir3n0mik {
@@ -13098,7 +13110,7 @@
 
             .CEmW4c {
                 color: rgb(var(--labelsColor, var(--wix-color-5)));
-                font: var(--labelsFont, var(--wix-font-Body-M));
+                /* font: var(--labelsFont, var(--wix-font-Body-M)); */
                 -webkit-text-decoration: var(--labelsFont-text-decoration, var(--wix-font-Body-M-text-decoration));
                 text-decoration: var(--labelsFont-text-decoration, var(--wix-font-Body-M-text-decoration));
                 font-size: var(--labelsFont-size, 16px)
@@ -13153,8 +13165,11 @@
                 margin-top: calc(0px + -0.25em);
                 margin-bottom: calc(24px + -0.25em);
             }
+            .WjL3Rv.PB_sYE {
+                justify-content: center
+            }
 
-            @media(min-width: 501px) {
+            @media(min-width: 301px) {
 
                 .WjL3Rv.kTgOYg,
                 .eventsRtl .WjL3Rv.UaQiqY {
@@ -13195,7 +13210,7 @@
 
             @media(max-width: 500px) {
                 .WjL3Rv {
-                    flex-direction: column
+                    /* flex-direction: column */
                 }
 
                 .WjL3Rv.bcdqU4:not(.KFhXYl) .qj3g_a {
@@ -13210,6 +13225,7 @@
                     box-sizing: border-box;
                     /* margin-top: 22px; */
                     color: #652a2a;
+                    font-family: 'Roboto', sans-serif;
                 }
             }
 
@@ -17366,12 +17382,18 @@ PERFORMANCE OF THIS SOFTWARE.
                                                                         <div id="mediair4tf58v7" class="mediair4tf58v7 YzqVVZ wixui-column-strip__column"><div id="bgLayers_mediair4tf58v7" data-hook="bgLayers" class="MW5IWV"><div data-testid="colorUnderlay" class="LWbAav Kv1aVt"></div><div id="bgMedia_mediair4tf58v7" class="VgO9Yg"></div></div><div data-mesh-id="mediair4tf58v7inlineContent" data-testid="inline-content" class=""><div data-mesh-id="mediair4tf58v7inlineContent-gridContainer" data-testid="mesh-container-content"><div id="comp-iv2danm9" class="KcpHeO tz5f0K comp-iv2danm9 wixui-rich-text" data-testid="richTextElement" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done" style="visibility: inherit;"><h2 class="font_2 wixui-rich-text__text" style="line-height:1.2em; text-align:center; font-size:44px;"><span style="font-style:italic;" class="wixui-rich-text__text"><span style="letter-spacing:0.15em;" class="wixui-rich-text__text"><span style="display:none;" class="wixui-rich-text__text">&nbsp;</span>Sự kiện cưới<span style="display:none;" class="wixui-rich-text__text">&nbsp;</span></span></span></h2></div><div id="comp-ir3leu0x" class="SsY_2i comp-ir3leu0x" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done" style="visibility: inherit;"><div class="UGHfip wixui-vertical-line"></div></div><div id="comp-irvpmqmx" class="TWFxr5"><div class="comp-irvpmqmx"><style>.comp-irvpmqmx ._SbO6q {
                                                                             --eventsCount: 1;
                                                                           }
-                                                                          </style><div id="wix-events-widget" class="_SbO6q" dir="ltr" data-hook="EVENTS_ROOT_NODE"><div class="IOLuL5 GgNVPA" id="ev-frame" style="height: 344px; flex-direction: row-reverse;"><div id="ev-content-container" data-hook="ev-content-container" class="C7DkT1 pe2Vf2 PeGSNm" style="width: 100%; height: 100%;"><div id="ev-content" class="KvGTRc"><div><div style="margin-bottom: 54px;"><div class="PB_sYE bcdqU4 WjL3Rv" data-hook="ev-date-location"><div class="qj3g_a" style="margin-bottom: 0px;"><div data-hook="date-container" class="MTGpiK"><div class="CEmW4c bu16Av" data-hook="date-title">Thời gian</div><div class="Qkp9SJ bu16Av _8yxZW9"><div class="yiOH0x" data-hook="date-text">17:00, 06 thg 8</div></div></div></div><div class="j3AQS4" style="margin-bottom: 0px;"><div data-hook="location-container" class="MTGpiK"><div class="CEmW4c bu16Av" data-hook="location-title">Địa điểm</div><div class="Qkp9SJ bu16Av _8yxZW9"><div class="yiOH0x" data-hook="location-text">Ngũ Hành Sơn, </div><div class="yiOH0x" data-hook="location-additional-text">120A Nguyễn Văn Thoại, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam</div></div></div></div></div></div></div><div style="margin-bottom: 0px;"><div id="ev-rsvp-button" class="xAH0mk"><a data-hook="ev-rsvp-button" class="DjQEyU BoD93f AinsX6 zLSZXO" href="https://tuenghi1993dn.wixsite.com/my-site-1/events/khoa-hang?utm_campaign=zalo&amp;utm_medium=zalo&amp;utm_source=zalo" rel="" style="min-width: 140px; min-height: 44px;">RSVP</a></div></div></div></div></div></div></div></div><div id="comp-irq7otf0" class="comp-irq7otf0 wixui-vector-image" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done" style="visibility: inherit;"><div data-testid="svgRoot-comp-irq7otf0" class="aizuI7 TcoJIb R8rhQA comp-irq7otf0"><svg preserveAspectRatio="xMidYMid meet" data-bbox="46.653 22.424 106.694 155.152" xmlns="http://www.w3.org/2000/svg" viewBox="46.653 22.424 106.694 155.152" role="presentation" aria-hidden="true">
-                                                                              <g>
-                                                                                  <path d="M153.347 75.771c0 29.464-53.349 101.805-53.349 101.805S46.653 105.235 46.653 75.771c0-29.462 23.886-53.347 53.346-53.347 29.464 0 53.348 23.885 53.348 53.347z"></path>
-                                                                              </g>
-                                                                          </svg>
-                                                                          </div></div><div id="comp-irq7pyes" class="comp-irq7pyes wixui-vector-image" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done" style="visibility: inherit;"><div data-testid="svgRoot-comp-irq7pyes" class="aizuI7 TcoJIb comp-irq7pyes"><svg preserveAspectRatio="xMidYMid meet" data-bbox="-79.5 120 159 159" xmlns="http://www.w3.org/2000/svg" viewBox="-79.5 120 159 159" role="presentation" aria-hidden="true">
+                                                                        </style>
+                                                                        <div id="wix-events-widget" class="_SbO6q" dir="ltr" data-hook="EVENTS_ROOT_NODE"><div class="IOLuL5 GgNVPA" id="ev-frame" style="height: 344px; flex-direction: row-reverse;"><div id="ev-content-container" data-hook="ev-content-container" class="C7DkT1 pe2Vf2 PeGSNm" style="width: 100%; height: 100%;"><div id="ev-content" class="KvGTRc"><div><div style="margin-bottom: 54px;"><div class="PB_sYE bcdqU4 WjL3Rv" data-hook="ev-date-location"><div class="qj3g_a" style="margin-bottom: 0px;"><div data-hook="date-container" class="MTGpiK"><div class="CEmW4c bu16Av" data-hook="date-title"><b>Thời gian</b></div><div class="Qkp9SJ bu16Av _8yxZW9"><div class="yiOH0x" data-hook="date-text">17:00, 06 thg 8</div></div></div></div><div class="j3AQS4" style="margin-bottom: 0px;"><div data-hook="location-container" class="MTGpiK"><div class="CEmW4c bu16Av" data-hook="location-title">
+                                                                            <b>Địa điểm</b>
+                                                                        </div>
+                                                                        <div class="Qkp9SJ bu16Av _8yxZW9"><div class="yiOH0x" data-hook="location-text">Royal Lotus Palace, </div><div class="yiOH0x" data-hook="location-additional-text">120A Nguyễn Văn Thoại, Bắc Mỹ Phú, Ngũ Hành Sơn, Đà Nẵng 550000, Việt Nam</div></div></div></div></div></div></div><div style="margin-bottom: 0px;"><div id="ev-rsvp-button" class="xAH0mk"><a data-hook="ev-rsvp-button" class="DjQEyU BoD93f AinsX6 zLSZXO" href="https://tuenghi1993dn.wixsite.com/my-site-1/events/khoa-hang?utm_campaign=zalo&amp;utm_medium=zalo&amp;utm_source=zalo" rel="" style="min-width: 140px; min-height: 44px;">Let's Go</a></div></div></div></div></div></div></div></div><div id="comp-irq7otf0" class="comp-irq7otf0 wixui-vector-image" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done" style="visibility: inherit;"><div data-testid="svgRoot-comp-irq7otf0" class="aizuI7 TcoJIb R8rhQA comp-irq7otf0">
+                                                                            <svg preserveAspectRatio="xMidYMid meet" data-bbox="46.653 22.424 106.694 155.152" xmlns="http://www.w3.org/2000/svg" viewBox="46.653 22.424 106.694 155.152" role="presentation" aria-hidden="true">
+                                                                                <g>
+                                                                                    <path d="M153.347 75.771c0 29.464-53.349 101.805-53.349 101.805S46.653 105.235 46.653 75.771c0-29.462 23.886-53.347 53.346-53.347 29.464 0 53.348 23.885 53.348 53.347z"></path>
+                                                                                </g>
+                                                                            </svg>
+                                                                            </div></div>
+                                                                        <div id="comp-irq7pyes" class="comp-irq7pyes wixui-vector-image" data-angle="0" data-angle-style-location="style" data-screen-in-hide="done" style="visibility: inherit;"><div data-testid="svgRoot-comp-irq7pyes" class="aizuI7 TcoJIb comp-irq7pyes"><svg preserveAspectRatio="xMidYMid meet" data-bbox="-79.5 120 159 159" xmlns="http://www.w3.org/2000/svg" viewBox="-79.5 120 159 159" role="presentation" aria-hidden="true">
                                                                               <g>
                                                                                   <path d="M0 120c-43.8 0-79.5 35.7-79.5 79.5S-43.8 279 0 279s79.5-35.7 79.5-79.5S43.8 120 0 120zm0 144.1c-35.6 0-64.6-29-64.6-64.6s29-64.6 64.6-64.6 64.6 29 64.6 64.6-29 64.6-64.6 64.6zm-1.4-55.5h26.7v6.5H-7.9v-49.2h6.5v42.7z"></path>
                                                                               </g>
@@ -19653,19 +19675,35 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-        window.addEventListener('scroll', function () {
-            var element = document.getElementById('mediair4tf58v7');
-            var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
+        // window.addEventListener('scroll', function () {
+        //     var element = document.getElementById('mediair4tf58v7');
+        //     var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
 
-            var rect = element.getBoundingClientRect();
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            console.log(rect.top, window.innerHeight);
-            if (rect.top < window.innerHeight) {
-                // eventEl.style.background = 'red';
-                document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
-            } else {
-                document.getElementById("backgroundImg").src = "./img/background.webp";
-            }
+        //     var rect = element.getBoundingClientRect();
+        //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        //     console.log(rect.top, window.innerHeight);
+        //     if (rect.top < window.innerHeight) {
+        //         // eventEl.style.background = 'red';
+        //         document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
+        //     } else {
+        //         document.getElementById("backgroundImg").src = "./img/background.webp";
+        //     }
+        // });
+
+        window.addEventListener('scroll', function () {
+        var element = document.getElementById('mediair4tf58v7');
+        var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
+        
+        var rect = element.getBoundingClientRect();
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if (rect.top < window.innerHeight) {
+            eventEl.style.background = 'red';
+            document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
+        } else {
+            eventEl.style.background = ''; // Đặt lại giá trị mặc định của background
+            document.getElementById("backgroundImg").src = "./img/background.webp";
+        }
         });
 
         document.getElementById("lets_go").addEventListener("click", function () {
