@@ -12726,7 +12726,23 @@
                 text-decoration: var(--listHeaderLocationFont-text-decoration, var(--wix-font-Body-M-text-decoration));
                 font-size: var(--listHeaderLocationFont-size, 16px)
             }
+            #backgroundImgContainer {
+  position: relative;
+}
 
+#backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1; /* Điều chỉnh giá trị này để thay đổi độ mờ */
+  transition: opacity 0.3s ease-in-out; /* Tạo hiệu ứng mờ trơn */
+}
+
+#backgroundImg:hover {
+  opacity: 1; /* Khi rê chuột vào, hình ảnh sẽ không mờ đi */
+}
             .o3jfN8 {
                 display: flex;
                 height: 100%;
@@ -16650,6 +16666,8 @@ PERFORMANCE OF THIS SOFTWARE.
                                     style="transform: translate3d(0px, 0px, 0px);">
                                     <img id="backgroundImg" src="./img/background.webp" alt=""
                                         style="object-fit: cover; object-position: 50% 0%;" fetchpriority="high">
+                                    <img id="backgroundImgScroll" src="./img/nen_scroll.png" alt=""
+                                    style="display:none;object-fit: cover; object-position: 50% 0%;" fetchpriority="high">
                                 </wow-image>
                             </div>
                         </div>
@@ -19678,10 +19696,12 @@ PERFORMANCE OF THIS SOFTWARE.
         // window.addEventListener('scroll', function () {
         //     var element = document.getElementById('mediair4tf58v7');
         //     var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
-
+            
         //     var rect = element.getBoundingClientRect();
         //     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         //     console.log(rect.top, window.innerHeight);
+        //     alert(window.innerHeight)
+            
         //     if (rect.top < window.innerHeight) {
         //         // eventEl.style.background = 'red';
         //         document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
@@ -19689,42 +19709,31 @@ PERFORMANCE OF THIS SOFTWARE.
         //         document.getElementById("backgroundImg").src = "./img/background.webp";
         //     }
         // });
-
         window.addEventListener('scroll', function() {
-            var element = document.getElementById('mediair4tf58v7');
-            var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
-
-            if (element && eventEl) {
-                var rect = element.getBoundingClientRect();
-                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-                if (rect.top < window.innerHeight) {
-                eventEl.style.background = 'red';
-                document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
-                } else {
-                eventEl.style.background = ''; // Đặt lại giá trị mặc định của background
-                document.getElementById("backgroundImg").src = "./img/background.webp";
-                }
-            }
-        });
-
-        window.addEventListener('touchmove', function() {
         var element = document.getElementById('mediair4tf58v7');
         var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
-
-        if (element && eventEl) {
-            var rect = element.getBoundingClientRect();
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (rect.top < window.innerHeight) {
-            eventEl.style.background = 'red';
+        
+        var rect = element.getBoundingClientRect();
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
+        document.getElementById("backgroundImg").style.opacity = 0.5;
+        if(rect.top < 1600 && windowWidth <= 600 && windowWidth >= 400) {
+            console.log(rect.top, windowHeight);
             document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
-            } else {
-            eventEl.style.background = ''; // Đặt lại giá trị mặc định của background
+            document.getElementById("backgroundImg").style.opacity = 0.5;
+        }
+        if (rect.top < windowHeight && windowWidth > 1000) {
+            document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
+            document.getElementById("backgroundImg").style.opacity = 0.5;
+
+        } else if(rect.top > 2000){
             document.getElementById("backgroundImg").src = "./img/background.webp";
-            }
+            document.getElementById("backgroundImg").style.opacity = 1;
         }
         });
+
 
         // <![CDATA[  <-- For SVG support
         if ('WebSocket' in window) {
