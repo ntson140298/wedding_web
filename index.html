@@ -19708,6 +19708,24 @@ PERFORMANCE OF THIS SOFTWARE.
             }
         });
 
+        window.addEventListener('touchmove', function() {
+        var element = document.getElementById('mediair4tf58v7');
+        var eventEl = document.getElementById('BACKGROUND_GROUP_TRANSITION_GROUP');
+
+        if (element && eventEl) {
+            var rect = element.getBoundingClientRect();
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (rect.top < window.innerHeight) {
+            eventEl.style.background = 'red';
+            document.getElementById("backgroundImg").src = "./img/nen_scroll.png";
+            } else {
+            eventEl.style.background = ''; // Đặt lại giá trị mặc định của background
+            document.getElementById("backgroundImg").src = "./img/background.webp";
+            }
+        }
+        });
+
         // <![CDATA[  <-- For SVG support
         if ('WebSocket' in window) {
             (function () {
